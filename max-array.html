@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr1 =[0];
+    //Nhập vào mảng từ bàn phím
+    var n =prompt("nhap so phan tu cua mang",0);
+    var b =0;
+    for(var i =0;i<n;i++)
+    {
+        var j = i+1;
+        b = prompt(('Nhập phần tử thứ'+j+'='),0);
+        arr1[i] =b;
+    }
+    var max  = maxArray(arr1);
+    alert(max);
+
+    function maxArray(arr){
+        var max = arr[0];
+        for( var i =1;i<arr.length;i++)
+        {
+            if(arr[i]> max)
+            {
+                max = arr[i];
+            }
+        }return max;
+    }
+</script>
+</body>
+</html>
